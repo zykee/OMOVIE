@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OMOVIE</title>
+    <link rel="stylesheet" href=CSS/bootstrap.min.css>
+    <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.eot">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="text/javascript" src="JS/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<div class="container header">
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">-->
+                    <!--<span class="sr-only">切换导航</span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+                <a class="navbar-brand flag" href="#">OMOVIE</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+                <div>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group ">
+                            <!--搜索框 id为 search_input ,在此匹配用户输入的信息,在表中进行查询,返回不同的信息-->
+                            <input id="search_input"  name="search_input" type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <!--确定搜索按钮 , id 为 search_btn ,绑定事件,在数据库中匹配search_input中的内容触发搜索api-->
+                        <button id="search_btn" type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div id="wrapper">
+    <div class="overlay"></div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav" id="movieLists">
+            <li class="sidebar-brand">
+                <a href="#">
+                    分类列表
+                </a>
+            </li>
+            <li class="active" id="homepage"><a href="#home" data-toggle="tab">首页</a></li>
+            <!--<li id="1"><a href="#" data-toggle="tab">2017电影<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li id="2"><a href="#" data-toggle="tab">国语电影<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li id="3"><a href="#" data-toggle="tab">动作片<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li id="4"><a href="#" data-toggle="tab">爱情片<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li id="5"><a href="#" data-toggle="tab">喜剧片<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li id="6"><a href="#" data-toggle="tab">科幻片<span class="glyphicon glyphicon-chevron-right"></span></a></li>-->
+
+        </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+
+        <div class="container">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" >
+                    <div class="row"  id="myTabContent"></div>
+                </div>
+            <!--<div id="myTabContent" class="tab-content">-->
+
+                <!--<div class="tab-pane fade " id="thisYear">
+                    <embed src='http://player.youku.com/player.php/sid/XMjg4NjY3MjA4NA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+                </div>
+                <div class="tab-pane fade" id="country">
+                    国语电影
+                </div>
+                <div class="tab-pane fade" id="action">
+                    动作电影
+                </div>
+                <div class="tab-pane fade" id="love">
+                    爱情电影
+                </div>
+                <div class="tab-pane fade" id="comedy">
+                    喜剧电影
+                </div>
+                <div class="tab-pane fade" id="science">
+                    科幻电影
+                </div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+        <footer id="footer">
+            <div class="container">
+                <p>COPYRIGHT 2017 OMOVIE. ALL RIGHTS RESERVED.</p>
+                <p>POWERED BY BOOTSTRAP.</p>
+                <p>鄂ICP备17006591号</p>
+            </div>
+        </footer>
+
+</div>
+</div>
+<script type="text/javascript" src="JS/main.js"></script>
+</body>
+</html>
